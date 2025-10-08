@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title> Web-инт. Задание 1. Иващук 21/2 </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1> Web-инт. Задание 1. Иващук 21/2 </h1>
+        <ul>
+            <li><a id = "link" href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru </a></li>
+            <li><a href="https://kubsu.ru"> Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https </a></li>
+            <li><a href="https://kubsu.ru">
+                <img src="kubsu photo.jpg"
+                alt="ссылка-изображение"
+                width="350"
+                height="200">
+            </a></li>
+            <li><a href="http://127.0.0.1:5500/"> Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="/"> Сокращённая ссылка на главную страницу </a></li>
+            <li><a href="#link"> Ссылка на фрагмент текущей страницы </a></li>
+            <li><a href="/index?size=m?color=black?page=1"> Ссылка с тремя параметрами в URL </a></li>
+            <li><a href="/index?id=id"> Ссылка с параметром id в URL </a></li>
+            <li><a href="./index.html"> Относительная ссылка на страницу в текущем каталоге </a></li>
+            <li><a href="/about/index.html"> Относительная ссылка на страницу в каталоге about </a></li>
+            <li><a href="../index.html"> Относительная ссылка на страницу в каталоге уровнем выше текущего </a></li>
+            <li><a href="../../index.html"> Относительная ссылка на страницу в каталоге двумя уровнями выше </a></li>
+            <li><a href="#link"> Контекстная ссылка </a> в тексте абзаца </li>
+            <li><a href="https://www.kubsu.ru/ru/node/44432"> Ссылка на фрагмент страницы стороннего сайта </a></li>
+            <li><p> Ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
+                    <map name="map"><br>
+                    <area shape="rect" 
+                          coords="0,0,200,200" 
+                          href="https://kubsu.ru/ru/node/1969" 
+                          alt="Фотогалерея КубГУ">
+                    <area shape="rect" 
+                          coords="0, 0,200,200" 
+                          href="https://vtour.kubsu.ru/01/index.html#/scene_0001/" 
+                          alt="Тур по КубГУ">
+                   <img src="photo kubik.jpg" 
+                         alt="Картинка с разными областями" 
+                         usemap="#map"
+                         width="350" 
+                         height="200">
+                </map>
+                </p>
+            </li>
+            <li><a href=""> Ссылка с пустым href </a></li>
+            <li><a> Ссылка без href </a></li>
+            <li><a href="/no-follow" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам </a></li>
+            <li><a href="/no-index" rel="noindex"> Запрещенная ссылка для индексации поисковиками </a></li>
+            <li>Нумерованный список ссылок с подписями title:
+                <ol>
+                    <li><a href="/link1" title = "Ссылка на внешнюю страницу"> Ссылка 1 </a></li>
+                    <li><a href="/link2" title = "Ссылка"> Ссылка 2 </a></li>
+                    <li><a href="/link3" title = "Ссылка 2"> Ссылка 3 </a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://user:password@example/file.txt"> Ссылка на файл на сервере FTP с авторизацией </a></li>
+        </ul>
+       
+        <h2> Форма </h2>
+        
+        <form action="/"
+        method="POST">
+            
+            <label> 
+                ФИО: <br>
+                <input name="field-name-1"
+                       placeholder="Введите ваше ФИО">
+            </label> <br>  
+            
+            <label>
+                Номер телефона: <br>
+                <input name="field-tel"
+                       type="tel"
+                       placeholder="Введите номер телефона">
+            </label> <br>
+            
+            <label>
+                Email (электронная почта): <br>
+                <input name="field-email"
+                       type="email"
+                       placeholder="Введите ваш email">
+            </label> <br>
+
+            <label>
+                Дата рождения: <br>
+                <input name="field-date"
+                       value="2025-01-01"
+                       type="date">
+            </label> <br>
+
+            <label>
+                Пол:
+                <input type="radio"
+                       name="radio-group"
+                       value="Мужской">
+                Мужской
+            </label>
+            
+            <label>
+                <input type="radio"
+                       name="radio-group"
+                       value="Женский">
+                Женский
+            </label> <br>
+            
+            <br>
+            
+            <label>
+                Любимый язык программирования: <br>
+                <select name="field-name-2"[]
+                        multiple="multiple">
+                    <option value="Pascal" selected="selected"> Pascal </option>
+                    <option value="С"> C </option>
+                    <option value="С++"> C++ </option>
+                    <option value="JavaScript"> JavaScript </option>
+                    <option value="PHP"> PHP </option>
+                    <option value="Python"> Python </option>
+                    <option value="Java"> Java </option>
+                    <option value="Haskel"> Haskel </option>
+                    <option value="Clojure"> Clojure </option>
+                    <option value="Prolog"> Prolog </option>
+                    <option value="Scala"> Scala </option>
+                </select>
+            </label> <br>
+
+            <label>
+                Биография <br>
+                <textarea name="field-name-3" placeholder="Напишите о себе"> </textarea>
+            </label> <br>
+
+            <label>
+                <input type="checkbox"
+                       checked="checked"
+                       name="field-name-4">
+                С контрактом ознакомлен(а)
+            </label> <br>
+
+            <input type="submit"
+                   value="Сохранить">
+        </form>    </body>
+</html>
