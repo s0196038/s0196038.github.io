@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(218, 248, 255, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.popup {
+    background: #93c4ff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 100vh;
+    border-radius: 30px;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup input,
+.popup textarea {
+    width: 100%;
+    align-content: center;
+    margin-bottom: 5px;
+    padding: 2px;;
+}
+
+.check{
+    width: 5% !important;
+}
+
+.popup textarea {
+    resize: none;
+    height: 80px;
+}
+
+.checkbox {
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
