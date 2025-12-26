@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 100%;
+    background-color: #acdfff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[name="numberfield"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[name="numberfield"]:focus {
+    border-color: #0066cc;
+}
+
+select[name="selectfield"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select[name="selectfield"]:focus {
+    border-color: #0066cc;
+}
+
+/* Кнопка */
+button#button1 {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#button1:hover {
+    background-color: #0052a3;
+}
+
+div#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#result p {
+    color: #0066cc;
+    font-size: 18px;
+    margin: 0;
+}
