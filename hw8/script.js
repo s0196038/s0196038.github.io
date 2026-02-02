@@ -4,7 +4,7 @@ const overlay = document.getElementById("overlay");
 const form = document.getElementById("feedbackForm");
 const statusText = document.getElementById("status");
 
-// ---------- Открытие формы ----------
+// открытие формы
 function openForm(push = true) {
     overlay.classList.add("active");
     if (push) {
@@ -13,21 +13,21 @@ function openForm(push = true) {
     restoreData();
 }
 
-// ---------- Закрытие формы ----------
+// закрытие формы
 function closeForm() {
     overlay.classList.remove("active");
 }
 
-// ---------- Кнопки ----------
+// кнопки
 openBtn.addEventListener("click", () => openForm());
 closeBtn.addEventListener("click", () => history.back());
 
-// ---------- Назад в браузере ----------
+// назад в браузере
 window.addEventListener("popstate", () => {
     closeForm();
 });
 
-// ---------- LocalStorage ----------
+//LocalStorage
 function saveData() {
     const data = Object.fromEntries(new FormData(form));
     localStorage.setItem("feedbackData", JSON.stringify(data));
@@ -46,7 +46,7 @@ function restoreData() {
 
 form.addEventListener("input", saveData);
 
-// ---------- Отправка формы ----------
+//отправка формы
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -72,3 +72,4 @@ form.addEventListener("submit", async (e) => {
         statusText.textContent = "Ошибка сети";
     }
 });
+
