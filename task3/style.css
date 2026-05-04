@@ -1,0 +1,106 @@
+/* Супер простой CSS дизайн в синих тонах — без теней и акцентов */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #d6e5f0;  /* сплошной синеватый фон */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ecf3f8;  /* бледно-синий фон формы */
+    padding: 20px 25px;
+    border: 1px solid #8fb4cc;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0a3b55;       /* темно-синий */
+}
+
+p {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+label {
+    font-weight: normal;
+    color: #0a3b55;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    max-width: 450px;
+    padding: 6px 10px;
+    margin-top: 4px;
+    border: 1px solid #7d9eb8;
+    background: white;
+    font-size: 0.9rem;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+select[multiple] {
+    min-height: 130px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #2c6c8f;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: normal;
+    background: #e2edf5;
+    padding: 3px 12px;
+    border: 1px solid #8fb4cc;
+}
+
+small {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.7rem;
+    color: #1f5373;
+}
+
+button {
+    background: #2c6c8f;
+    border: 1px solid #1a4d68;
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #1f5575;
+}
