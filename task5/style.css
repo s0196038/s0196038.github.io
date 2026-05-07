@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #d1e9f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+h3 {
+    text-align: center;
+    color: #1a5f7a;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+form {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 40px;
+    border: 1px solid #b8d9e8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #0a4c63;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bddce8;
+    font-size: 14px;
+    background: #fefefe;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-group label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-group label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+select {
+    background: #fefefe;
+}
+
+select[multiple] {
+    min-height: 120px;
+}
+
+button {
+    background: #2c8bb3;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a6f91;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #b8e0c2;
+}
+
+/* Адаптивность */
+@media (max-width: 640px) {
+    form {
+        padding: 25px 20px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+}
